@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.com/image-filter-app/static/css/main.031c62a3.css",
+    "main.js": "/github.com/image-filter-app/static/js/main.426908ca.js",
+    "static/js/787.cd04333b.chunk.js": "/github.com/image-filter-app/static/js/787.cd04333b.chunk.js",
+    "index.html": "/github.com/image-filter-app/index.html",
+    "main.031c62a3.css.map": "/github.com/image-filter-app/static/css/main.031c62a3.css.map",
+    "main.426908ca.js.map": "/github.com/image-filter-app/static/js/main.426908ca.js.map",
+    "787.cd04333b.chunk.js.map": "/github.com/image-filter-app/static/js/787.cd04333b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.031c62a3.css",
+    "static/js/main.426908ca.js"
+  ]
+}
