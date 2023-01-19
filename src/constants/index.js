@@ -1,12 +1,12 @@
 export const arrFormat = [
     {
         name:'PNG',
-        extension:'.png',
+        extension:'png',
        
     },
     {
         name:'JPEG',
-        extension:'.jpeg',
+        extension:'jpeg',
       
     }
 ]

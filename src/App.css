@@ -29,7 +29,7 @@
 }
 .main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -180,4 +180,25 @@ input[type="checkbox"].switch_1{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }

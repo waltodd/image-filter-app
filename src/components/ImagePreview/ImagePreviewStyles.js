@@ -6,50 +6,102 @@ export const Wrapper = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: .5rem;
+  grid-template-columns:  1fr;
+  grid-gap: 0.5rem;
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    width: 100%;
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0.5rem;
+  }
+
 `;
 export const Card = styled.div`
+width: 100%;
+max-width: 402px;
+margin: auto;
 border-radius: 12px;
-background: #f6f8fb;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-//width: 402px;
-height: 412px;
-width: 90%;
-  max-width: 402px;
-  margin: auto;
-position: relative;
-justify-content: center;
-  align-items: center;
+    background: #f6f8fb;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    //width: 402px;
+    height: 412px;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    width: 100%;
+    max-width: 402px;
+    height: 412px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #f6f8fb;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    border-radius: 12px;
+    background: #f6f8fb;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 412px;
+    width: 90%;
+    max-width: 402px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const CardFilter = styled.div`
-border-radius: 12px;
-background: #ffffff;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-//width: 302px;
-height: 435px;
-width: 90%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  //width: 302px;
+  height: 435px;
+  width: 90%;
   max-width: 402px;
   margin: auto;
-position: relative;
-padding:1rem;
-justify-content: center;
+  position: relative;
+  padding: 1rem;
+  justify-content: center;
   align-items: center;
 `;
 
 export const Col = styled.div`
-  display:flex;
-  justify-content:center;
-  align-itens:center;
-  flex-direction:column;
-
+  display: flex;
+  justify-content: center;
+  align-itens: center;
+  flex-direction: column;
 `;
 export const Row = styled.div`
-  display:flex;
-  align-itens:flex-start;
-  flex-direction:row;
-  justify-content:space-between;
-  text-align:center;
+  display: flex;
+  align-itens: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 `;
 export const InputRange = styled.input`
 overflow: hidden;
@@ -141,70 +193,69 @@ cursor: pointer;
 }
 `;
 export const SpanPer = styled.span`
-font-size:1rem;
-text-align:center;
-font-weight:500;
-color:#6c6c72;
-padding-top:.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #6c6c72;
+  padding-top: 0.5rem;
 `;
 export const Label = styled.label`
-font-size:1.1rem;
-text-align:start;
-font-weight:500;
-colo:#2c2d46;
+  font-size: 1.1rem;
+  text-align: start;
+  font-weight: 500;
+  colo: #2c2d46;
 `;
 export const BtnSave = styled.a`
-  padding:1rem 1rem;
-  background-color:#f6618c;
+  padding: 1rem 1rem;
+  background-color: #f6618c;
   color: #fff;
   border-radius: 2rem;
-  text-decoration:none;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  display:flex;
-  margin:.5rem 5rem;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin: 0.5rem 5rem;
   &:hover {
-    background-color:#ddd;
+    background-color: #ddd;
   }
 `;
 export const BtnModal = styled.div`
-  padding:.5rem 1rem;
-  background-color:#f6618c;
+  padding: 0.5rem 1rem;
+  background-color: #f6618c;
   color: #fff;
   border-radius: 2rem;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  display:flex;
-  margin:.5rem 2rem;
-  cursor:pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin: 0.5rem 2rem;
+  cursor: pointer;
   &:hover {
-    background-color:#ddd;
+    background-color: #ddd;
   }
 `;
 export const Modal = styled.div`
-position:absolute;
-border-radius: 12px;
-background: #f6f8fb;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-height: 260px;
-width: 90%;
+  position: absolute;
+  border-radius: 12px;
+  background: #f6f8fb;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  height: 260px;
+  width: 90%;
   max-width: 402px;
   margin: auto;
-justify-content: center;
+  justify-content: center;
   align-items: center;
-  padding:2rem;
-
+  padding: 2rem;
 `;
 
 export const BtnFt = styled.div`
-  width:4rem;
-  padding:.5rem 1rem;
+  width: 4rem;
+  padding: 0.5rem 1rem;
   color: #2c2d46;
   border-radius: 10px;
-  justify-content:space-between;
-  align-items:flex-start;
-  display:flex;
-  margin:1rem
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  margin: 1rem;
 `;

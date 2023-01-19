@@ -7,6 +7,13 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    height: 60vh;
+   
+    width: 100%;
+  }
 `;
 export const Form = styled.div`
   border-radius: 12px;
@@ -15,6 +22,12 @@ export const Form = styled.div`
   width: 402px;
   height: 412px;
   position: relative;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  }
 `;
 export const Title = styled.h1`
   text-align: center;
@@ -52,6 +65,12 @@ export const DropCard = styled.div`
   border: 1px dashed #97bef4;
   border-radius: 12px;
   position:relative;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    width: 90%;
+  max-width: 1600px;
+  margin: auto;
+  }
 `;
 export const Img = styled.img`
   width: 3rem;
