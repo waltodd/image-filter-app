@@ -20,7 +20,7 @@ const ImageUploader = ({getUploadedImage}) => {
       //Check if the file is not empty or exist
       if(acceptedFiles && acceptedFiles.length >0){
         const file = acceptedFiles[0];
-        console.log(file);
+        // console.log(file);
         const fileReader = new FileReader();
         fileReader.onload = () =>{
           getUploadedImage(

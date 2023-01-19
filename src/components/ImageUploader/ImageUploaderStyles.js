@@ -13,7 +13,7 @@ export const Form = styled.div`
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 402px;
-  height: 469px;
+  height: 412px;
   position: relative;
 `;
 export const Title = styled.h1`
@@ -75,7 +75,6 @@ export const BrowseBtn = styled.div`
 padding: .5rem;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 background: #FFFFFF;
-
 border-radius: 10px;
 cursor:pointer;
 font-size: 14px;

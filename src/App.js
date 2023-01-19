@@ -19,7 +19,7 @@ function App() {
      <div className='main'>
         <ImageUploader getUploadedImage={getUploadedImage} />
         {
-          uploadedImage && <ImagePreview {...uploadedImage} />
+          uploadedImage && <ImagePreview uploadedImage={uploadedImage} />
         }
      </div>
       </div>
